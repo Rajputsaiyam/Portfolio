@@ -1,0 +1,60 @@
+/* styles/skills.css */
+.skills-section {
+  padding: 80px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.skill-category {
+  background-color: var(--light-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .skill-category {
+  background-color: var(--dark-secondary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skill-category-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+body.dark .skill-category-title {
+  color: var(--secondary-color);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: var(--light-secondary);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+body.dark .skill-item {
+  background-color: var(--dark-bg);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

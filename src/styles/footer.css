@@ -1,0 +1,52 @@
+/* styles/footer.css */
+.footer {
+  background-color: var(--dark-secondary);
+  color: var(--text-light);
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-copyright p {
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-link {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer-built {
+  text-align: center;
+}
+
+.footer-built p {
+  color: var(--text-light);
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

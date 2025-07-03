@@ -1,0 +1,146 @@
+/* styles/projects.css */
+.projects-section {
+  background-color: var(--light-secondary);
+}
+
+body.dark .projects-section {
+  background-color: var(--dark-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--light-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark .project-card {
+  background-color: var(--dark-secondary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .project-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 255px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #e5e7eb;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 1000% center ; /* shift focus right */
+  display: block;
+}
+
+
+body.dark .project-image {
+  background-color: var(--dark-bg);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-gray);
+}
+
+body.dark .image-placeholder {
+  color: var(--text-light);
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+body.dark .project-title {
+  color: var(--text-light);
+}
+
+.project-description {
+  color: var(--text-gray);
+  margin-bottom: 15px;
+}
+
+body.dark .project-description {
+  color: var(--text-light);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-item {
+  background-color: var(--light-secondary);
+  color: var(--primary-color);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+body.dark .tech-item {
+  background-color: var(--dark-bg);
+  color: var(--secondary-color);
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body.dark .project-link {
+  color: var(--secondary-color);
+}
+
+.project-link:hover {
+  color: var(--primary-dark);
+}
+
+body.dark .project-link:hover {
+  color: var(--secondary-dark);
+}
+
+.link-icon {
+  margin-right: 6px;
+}

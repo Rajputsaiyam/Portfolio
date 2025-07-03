@@ -1,0 +1,121 @@
+/* styles/education.css */
+.education-section {
+  background-color: var(--light-secondary);
+}
+
+body.dark .education-section {
+  background-color: var(--dark-bg);
+}
+
+.education-list {
+  display: grid;
+  gap: 40px;
+}
+
+.education-card {
+  background-color: var(--light-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 25px;
+}
+
+body.dark .education-card {
+  background-color: var(--dark-secondary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.education-icon {
+  background-color: var(--light-secondary);
+  color: var(--primary-color);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.dark .education-icon {
+  background-color: var(--dark-bg);
+  color: var(--secondary-color);
+}
+
+.education-content {
+  flex: 1;
+}
+
+.education-degree {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+body.dark .education-degree {
+  color: var(--text-light);
+}
+
+.education-institution {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 5px;
+}
+
+body.dark .education-institution {
+  color: var(--text-light);
+}
+
+.education-duration {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin-bottom: 10px;
+}
+
+body.dark .education-duration {
+  color: var(--text-light);
+}
+
+.education-cgpa {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+body.dark .education-cgpa {
+  color: var(--secondary-color);
+}
+
+.education-courses h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+body.dark .education-courses h4 {
+  color: var(--text-light);
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-item {
+  background-color: var(--light-secondary);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+body.dark .course-item {
+  background-color: var(--dark-bg);
+  color: var(--secondary-color);
+}

@@ -1,0 +1,169 @@
+/* :root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #2dd4bf;
+  --secondary-dark: #0d9488;
+  --dark-bg: #111827;
+  --dark-secondary: #1f2937;
+  --light-bg: #ffffff;
+  --light-secondary: #f9fafb;
+  --text-dark: #1f2937;
+  --text-light: #f9fafb;
+  --text-gray: #6b7280;
+} */
+
+/* In global.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  color: var(--text-dark); /* Darker text for better readability */
+  transition: all 0.3s ease;
+}
+
+/* Make section titles slightly darker */
+.section-title {
+  color: #343a40; /* Dark gray instead of black */
+}
+
+.section-title span {
+  color: var(--primary-color);
+}
+:root {
+  /* Updated color palette */
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #2dd4bf;
+  --secondary-dark: #0d9488;
+  
+  /* New matte white background */
+  --light-bg: #f8f9fa; /* Soft matte white */
+  --light-secondary: #e9ecef; /* Slightly darker for cards */
+  
+  /* Dark mode colors remain the same */
+  --dark-bg: #111827;
+  --dark-secondary: #1f2937;
+  
+  /* Text colors */
+  --text-dark: #212529; /* Darker for better contrast on matte white */
+  --text-light: #f9fafb;
+  --text-gray: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  color: var(--primary-color);
+}
+
+body.dark .section-title span {
+  color: var(--secondary-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+body.dark .btn-outline {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+body.dark .btn-outline:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.card {
+  background-color: var(--light-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+body.dark .card {
+  background-color: var(--dark-secondary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
