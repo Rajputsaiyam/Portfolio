@@ -5,17 +5,17 @@ const achievements = [
   {
     title: "Top 5 - DCG Hackathon (DTU)",
     description: "Secured top 5 position in Delhi Coding Geeks Hackathon for TeleMed project.",
-    year: "2023"
+    year: "2024"
   },
   {
     title: "Top 10 - AceHack 3.0",
     description: "Achieved top 10 position in AceHack 3.0 hackathon for Nyayadheesh legal aid portal.",
-    year: "2023"
+    year: "2025"
   },
   {
     title: "Infosys Springboard Certification",
     description: "Completed courses in Generative AI, Machine Learning, and professional skills.",
-    year: "2023"
+    year: "2025"
   }
 ];
 
